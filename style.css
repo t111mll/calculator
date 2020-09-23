@@ -1,0 +1,93 @@
+body {
+    font-family: sans-serif;
+    
+    background-color: black;
+}
+
+/*everything contained inside the background image*/
+#container {
+    width: 1000px;
+    height: 550px;
+    background-image: url(blank.jpg);
+    margin: 20px auto;
+}
+
+/*inside the calculator*/
+#calculator {
+    width: 320px;
+    height: 520px;
+    background-color: black;
+    margin: 0 auto;
+    top: 15px;
+    position: relative;
+    border-radius: 30px;
+}
+
+/*inside the result container*/
+#result {
+    height: 120px;
+    text-align: right;
+}
+
+#history {
+    height: 20px;
+    margin: 0px 20px;
+    padding-top: 20px;
+    font-size: 17px;
+    color: #919191;
+}
+
+#output {
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+    color: white;
+}
+
+/*inside the keyboard container*/
+    #keyboard {
+        height: 400px;
+    }
+
+    .operator, .number, .empty {
+        width: 50px;
+        height: 50px;
+        margin: 15px;
+        float: left;
+        border-radius: 50%;
+        border-width: 1px;
+        font-weight: bold;
+        font-size: 20px;
+        color: whitesmoke;
+        background-color: black;
+    }
+    /*edit of blank keys*/
+    .empty {
+        border-width: 0;
+    }
+    /*edit of operators*/
+    .operator {
+        border-color: cornflowerblue;
+        color: cornflowerblue;
+    }
+        /*= operator edit*/
+    button:nth-child(20) {
+        background-color: cornflowerblue;
+        color: whitesmoke;
+    }
+    #clear {
+        border-color: red;
+        color: red;
+    }
+    /*cursor to pointer*/
+    .operator, .number {
+        cursor: pointer;
+    }
+    /*Button manipulation, it will shrink in size when clicked*/
+    .operator:active, .number:active {
+        font-size: 15px;
+    }
+    /*this removes the outline of the button when it is clicked*/
+    .operator:focus, .number:focus, .empty:focus {
+        outline: 0;
+    }
